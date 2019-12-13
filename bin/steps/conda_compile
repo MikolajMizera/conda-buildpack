@@ -6,7 +6,7 @@ if [ ! -d /app/.heroku/miniconda ]; then
 
     conda install pip --yes | indent
 fi
-
+conda list
 echo "nomkl" > $HOME/.heroku/miniconda/conda-meta/pinned
 echo "added pinned file in $HOME/.heroku/miniconda/conda-meta/pinned"
 conda config --add channels anaconda
