@@ -11,7 +11,7 @@ echo "nomkl" > $HOME/.heroku/miniconda/conda-meta/pinned
 echo "added pinned file in $HOME/.heroku/miniconda/conda-meta/pinned"
 conda config --add channels anaconda
 conda install python=3.6
-conda uninstall python=3.7
+conda remove python=3.7
 conda install nomkl
 conda install -c rdkit/label/nightly rdkit
 
